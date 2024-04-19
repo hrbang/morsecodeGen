@@ -7,7 +7,7 @@ const Footer = () => {
       <Separator />
       <div className="container flex flex-col items-start justify-between space-y-2 py-4 sm:flex-row sm:items-center sm:space-y-0 md:h-16">
         <h2 className="text-lg font-semibold">MorseGen.</h2>
-        <div className="flex items-center space-x-2 opacity-25">
+        <div className="hidden lg:flex items-center space-x-2 opacity-25">
           <p>Jonas Bang,</p>
           <p>Nicklas Møller-Johansen,</p>
           <p>Jonas Jessen,</p>

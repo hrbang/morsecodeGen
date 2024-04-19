@@ -65,9 +65,9 @@ export default function Home() {
 
   return (
     <>
-      <div className="hidden h-dvh flex-col md:flex">
+      <div className="md:h-dvh flex-col  md:flex">
         <Navigation />
-        <div className="container h-full py-6 flex-1 max-h-[calc(100vh-120px)]">
+        <div className="container h-full py-6 flex-1 md:max-h-[calc(100vh-120px)] md:flex-col flex-col-reverse">
           <div className="grid h-full items-stretch gap-6 md:grid-cols-[1fr_400px]">
             <Sidebar
               morseCodeType={morseCodeType}
@@ -78,8 +78,8 @@ export default function Home() {
             <div className="md:order-1">
               <div className="flex h-full flex-col space-y-4">
                 <div className="grid h-full gap-6 lg:grid-rows-2">
-                  <div className="flex h-full flex-col space-y-4">
-                    <div className="flex h-full flex-1 flex-col space-y-2">
+                  <div className="flex h-[500px] md:h-full flex-col space-y-4">
+                    <div className="flex flex-1 flex-col space-y-2">
                       <Textarea
                         id="input"
                         placeholder={
@@ -87,13 +87,13 @@ export default function Home() {
                             ? "Indtast morsekode"
                             : "Indtast tekst"
                         }
-                        className="min-h-full text-sm flex-1"
+                        className="h-full text-sm flex-1"
                         value={input}
                         onChange={handleInputChange}
                       />
                     </div>
                   </div>
-                  <div className="rounded-md border bg-muted">
+                  <div className="rounded-md h-[500px] md:h-full border bg-muted">
                     <div className="flex flex-1 flex-col space-y-2">
                       <Textarea
                         id="translation"

@@ -45,7 +45,7 @@ const Sidebar = ({
   // Returnerer JSX for Sidebar-komponenten, inklusiv indstillinger for oversættelsesretning og morsekode type,
   // samt et område, der viser morsekoder og deres tilsvarende karakterer.
   return (
-    <div className="hidden flex-col space-y-4 sm:flex md:order-2 border-[1px] border-border border-solid p-6 rounded-md relative">
+    <div className="flex-col space-y-4 sm:flex md:order-2 border-[1px] border-border border-solid p-6 rounded-md relative">
       <h3 className="text-lg font-semibold">Indstillinger</h3>
       <div className="grid gap-2">
         {/* HoverCard-komponenten viser yderligere information, når brugeren holder musen over etiketten. */}
